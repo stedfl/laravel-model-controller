@@ -23,6 +23,9 @@ class PageController extends Controller
 
     public function details($id) {
         $movie = Movie::find($id);
+        if(is_null($movie)) {
+            abort(404, 'Movie not found!');
+        }
         return view('details', compact('movie'));
     }
 }
