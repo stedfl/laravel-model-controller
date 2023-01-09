@@ -14,5 +14,14 @@ return [
             'text' => 'contacts',
             'routeName' => 'contacts',
         ]
+    ],
+
+    'footerMenu' => [
+        'legal notes',
+        'help',
+        'job opportunities',
+        'cookies preferencies',
+        'gift card',
+        'privacy'
     ]
 ];
